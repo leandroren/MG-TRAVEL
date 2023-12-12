@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+nav{
+    font-size: 18px;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+nav .btn{
+    margin: 0 10px;
+}
+
+.btn{
+    background-color: #121212;
+    border-radius: 10px;
+    color: white;
+    font-weight: 400;
+}
+
+.btn:hover {
+    transition: 1s;
+    border: 1.5px solid #121212;
+    background-color: #D9D9D9;
+    color: #121212;
+}
+
+.descripcion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to bottom right,#D9D9D9 20%, rgb(255, 255, 255) 70%);
+}
+
+.descripcion-titulo{
+    width: 50%;
+    margin-left: 120px;
+}
+
+.descripcion-titulo h1{
+    padding: 10px;
+}
+
+.descripcion-titulo h2{
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.descripcion-titulo .btn{
+    margin: 0 8px;
+}
+
+.descripcion-titulo p {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 10px;
+    width: 60%;
+}
+
+.descripcion img{
+    width: 700px;
+}
+
+.nosotros {
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+}
+
+.nosotros h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 50px 0;
+}
+
+.nosotros h3{
+    text-align: center;
+    margin: 25px 0;
+    font-size: 20px;
+}
+
+.pasos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.pasos .card{
+    width: 30%;
+    height: 250px;
+    margin: 0 20px;
+    -webkit-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.39);
+    box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.39);
+    background: linear-gradient(to bottom right,#f5f5f5 20%, rgb(239, 239, 239) 70%);
+}
+
+.pasos .card p{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.contacto{
+    text-align: center;
+   padding: 20px;
+}
+
+.contacto .card{
+    width: 30%;
+    display: block;
+    margin: 20px auto;
+    -webkit-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.39);
+    box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.39);
+    background: linear-gradient(to bottom right,#f3f1f1 20%, rgb(239, 239, 239) 70%);
+}
+
+.contacto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .whatsapp-icon {
+    color: rgb(58, 205, 50);
+}
+
+    .contacto h2{
+        font-size: 2.5rem;
+        margin: 50px 0;
+    }
+
+  .contacto-container h3{
+    margin: 5px 0;
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+
+
+  footer{
+    padding: 20px 0;
+    background-color: #121212;
+}
+
+footer p{
+    color: #D9D9D9;
+    text-align: center;
+}
+  
+/************************ Media Queryes ***************************/
+
+@media (width < 768px) {
+
+    nav{
+        font-size: 14px;
+        margin: 0;
+    }
+    
+    nav .btn{
+        margin: 0;
+    }
+    
+    .descripcion{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .descripcion-titulo{
+        width: 100%;
+        margin-left: 0px;
+    }
+    
+    .descripcion-titulo h1{
+        padding: 5px;
+    }
+    
+    .descripcion-titulo h2{
+        padding: 5px;
+        font-size: 20px;
+    }
+    
+    .descripcion-titulo .btn{
+        margin: 0 0;
+    }
+    
+    .descripcion-titulo p {
+        font-size: 14px;
+        padding: 0 5px;
+        width: 80%;
+    }
+    
+    .descripcion img{
+        width: 100%;
+    }
+    
+    .nosotros {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+    }
+    
+    .nosotros h2{
+        text-align: center;
+        font-size: 18px;
+        margin: 20px 0;
+        font-weight: bold;
+    }
+    
+    .nosotros h3{
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .pasos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    
+    .pasos .card{
+        width: 80%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .pasos .card h4{
+        font-size: 16px;
+    }
+    
+    .pasos .card p{
+        font-size: 14px;
+    }
+    
+    .contacto{
+       padding: 5px;
+       margin: 20px 0;
+    }
+    
+    .contacto .card{
+        width: 80%;
+        margin: 10px auto;
+    }
+    
+    .contacto-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+      }
+    
+    .contacto h2{
+            text-align: center;
+            font-size: 20px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+    
+      .contacto-container h3{
+        font-size: 18px;
+        padding: 5px 0;
+      }
+    
+    
+    
+      footer p{
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
+
+
+
